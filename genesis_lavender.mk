@@ -36,6 +36,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 GENESIS_MAINTAINER := MiTeSH
 WITH_GMS := true 
 
+# GMS
+$(call inherit-product, vendor/gms/products/gms.mk)
+
 # Device identifier
 PRODUCT_NAME := genesis_lavender
 PRODUCT_MANUFACTURER := Xiaomi
