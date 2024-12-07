@@ -33,6 +33,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGMIXM/release-keys \
     DeviceProduct=lavender
 
+GENESIS_MAINTAINER := MiTeSH
+WITH_GMS := true 
+
 # Device identifier
 PRODUCT_NAME := genesis_lavender
 PRODUCT_MANUFACTURER := Xiaomi
