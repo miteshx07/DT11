@@ -35,7 +35,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #GENESIS_MAINTAINER := MiTeSH
 #WITH_GMS := true 
-TARGET_SCREEN_WIDTH := 1080
+#TARGET_SCREEN_WIDTH := 1080
 TARGET_SUPPORTS_64_BIT_APPS := true
 # GMS
 #$(call inherit-product, vendor/gms/products/gms.mk)
