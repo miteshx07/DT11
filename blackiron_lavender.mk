@@ -25,7 +25,7 @@
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+$(call inherit-product, vendor/blackiron/config/blackiron.mk)
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -36,12 +36,16 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 #GENESIS_MAINTAINER := MiTeSH
 #WITH_GMS := true 
 #TARGET_SCREEN_WIDTH := 1080
-TARGET_SUPPORTS_64_BIT_APPS := true
+#TARGET_SUPPORTS_64_BIT_APPS := true
 # GMS
 #$(call inherit-product, vendor/gms/products/gms.mk)
 
+WITH_GMS := true
+BLACKIRON_PACKAGE_TYPE := CORE
+
+
 # Device identifier
-PRODUCT_NAME := nitrogen_lavender
+PRODUCT_NAME := blackiron_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
