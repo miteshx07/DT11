@@ -25,7 +25,7 @@
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/blackiron/config/blackiron.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -42,10 +42,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 WITH_GMS := true
 BLACKIRON_PACKAGE_TYPE := CORE
-
+BLACKIRON_MAINTAINER := MiTESH
 
 # Device identifier
-PRODUCT_NAME := blackiron_lavender
+PRODUCT_NAME := lineage_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
