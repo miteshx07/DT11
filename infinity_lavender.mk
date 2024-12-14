@@ -25,7 +25,7 @@
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -33,21 +33,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGMIXM/release-keys \
     DeviceProduct=lavender
 
-#GENESIS_MAINTAINER := MiTeSH
-#WITH_GMS := true 
-#TARGET_SCREEN_WIDTH := 1080
-#TARGET_SUPPORTS_64_BIT_APPS := true
-# GMS
-#$(call inherit-product, vendor/gms/products/gms.mk)
-
-WITH_GMS := true
-BLACKIRON_PACKAGE_TYPE := CORE
-BLACKIRON_MAINTAINER := MiTESH
-TARGET_CORE_GMS_EXTRAS := true
-TARGET_CORE_GMS := true
+WITH_GAPPS := true
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := MiTESH
 
 # Device identifier
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := infinity_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
