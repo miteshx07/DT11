@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+#V4A
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Inherit the sdm660-common definitions
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
