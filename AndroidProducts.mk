@@ -23,5 +23,5 @@
 
 # Inherit Redmi Note 7 device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_lavender.mk
+    $(LOCAL_DIR)/omni_lavender.mk
 
